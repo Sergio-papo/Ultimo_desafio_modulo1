@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Sebastian Fuster Soto</title>
+    
+    <!-- CSS de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Enlace a nuestra hoja de estilos personalizada -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class=""> <!-- Quitamos "bg-light" para que el CSS tome control -->
+
+    <!-- Barra de Navegación Fija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Sebastian Fuster S.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Enlaces de navegación -->
+                    <!-- Hacen scroll a las secciones correspondientes -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portafolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenedor Principal -->
+    <div class="container my-5">
+        
+        <!-- Sección de Encabezado y "Sobre mi" -->
+        <div class="card p-4 p-md-5 mb-5 header-section">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="asset/imagen/cv.jpg" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/200x200/6c757d/ffffff?text=Foto';"
+                         class="img-fluid rounded-circle profile-pic mb-3 mb-md-0" 
+                         alt="Foto de Sebastian Fuster">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="display-5 fw-bold">Sebastian Fuster Soto</h1>
+                    <h2 class="h4 text-white-50 mb-4">Estudiante de Desarrollo Fullstack</h2>
+                    <p class="lead">Hola, mi nombre es Sebastian Fuster. 
+                        Estoy en formación en la academia Desafio-Latam para convertirme en un desarrollador Fullstack con el objetivo de profesionalizar mis estudios. 
+                        Soy un apasionado por la tecnología y la programación, con una fuerte motivación por el aprendizaje continuo. Me gusta trabajar en equipo, 
+                        colaborar en ambientes dinámicos y enfrentar desafíos complejos, buscando siempre soluciones eficientes y creativas..</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Layout de dos columnas para el resto del contenido -->
+        <div class="row g-4">
+            
+            <!-- Columna Izquierda (principal) -->
+            <div class="col-lg-8">
+
+                <!-- Sección EDUCACIÓN -->
+                <div class="card mb-4" id="educacion">
+                    <div class="card-header bg-secondary text-white py-3"> <!-- Cambiado de bg-primary -->
+                        <h3 class="h5 mb-0"><i class="bi bi-book-fill me-2"></i>Educación y Formación</h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Desafio-Latam</h5>
+                        <p class="card-text">Estudiante de la carrera Desarrollo Fullstack.</p>
+                        <hr>
+                        <h5 class
+="card-title">Reconocimientos y Cursos</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Certificación Backend, Python con Fastapi (Academia Mouredebpro)</li>
+                            <li class="list-group-item">Certificado de Community Manager (Academia Coderhouse)</li>
+                            <li class="list-group-item">Certificado Manejo IA básico (GOOGLE)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sección PORTAFOLIO -->
+                <div class="card mb-4" id="portafolio">
+                    <div class="card-header bg-secondary text-white py-3"> <!-- Cambiado de bg-primary -->
+                        <h3 class="h5 mb-0"><i class="bi bi-briefcase-fill me-2"></i>Portafolio</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Reemplazamos el párrafo anterior con una grilla de proyectos -->
+                        <div class="row">
+                            
+                            <!-- Proyecto 1 -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="asset/imagen/cupon.png" class="card-img-top" alt="Proyecto Página de Cupones" style="object-fit: cover; height: 200px;">
+                                    <div class="card-body d-flex flex-column text-center">
+                                        <h5 class="card-title">Pagina de Cupones</h5>
+                                        <p class="card-text small text-muted">Sitio web de cupones.</p>
+                                        <a href="https://funnelatf.cl/" class="btn btn-outline-secondary mt-auto" target="_blank" rel="noopener noreferrer">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Proyecto 2 -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="asset/imagen/mb.png" class="card-img-top" alt="Proyecto SolucionesMB" style="object-fit: cover; height: 200px;">
+                                    <div class="card-body d-flex flex-column text-center">
+                                        <h5 class="card-title">SolucionesMB</h5>
+                                        <p class="card-text small text-muted">Sitio web de soluciones empresariales.</p>
+                                        <a href="https://solucionesmb.cl/" class="btn btn-outline-secondary mt-auto" target="_blank" rel="noopener noreferrer">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Proyecto 3 -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100 shadow-sm">
+                                    <img src="asset/imagen/iguana.png" class="card-img-top" alt="Proyecto Iguana Page" style="object-fit: cover; height: 200px;">
+                                    <div class="card-body d-flex flex-column text-center">
+                                        <h5 class="card-title">Iguana Page</h5>
+                                        <p class="card-text small text-muted">Página de destino (Landing Page).</p>
+                                        <a href="https://sistema.escuelahuachipatochillan.cl/login.php" class="btn btn-outline-secondary mt-auto" target="_blank" rel="noopener noreferrer">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección EXPERIENCIA -->
+                <div class="card mb-4" id="experiencia">
+                    <div class="card-header bg-secondary text-white py-3"> <!-- Cambiado de bg-primary -->
+                        <h3 class="h5 mb-0"><i class="bi bi-building-fill me-2"></i>Experiencia</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Reemplazamos el párrafo de "en construcción" por la lista de experiencias -->
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item px-0">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Diseñador Web Freelance</h5>
+                                    <small class="text-muted">2025 - Presente</small>
+                                </div>
+                                <p class="mb-1">Proyectos destacados: <a href="https://jpmubles.cl/" target="_blank" rel="noopener noreferrer">jpmubles.cl</a>, <a href="https://surfears.cl/" target="_blank" rel="noopener noreferrer">surfears.cl</a>, <a href="https://solucionesmb.cl/" target="_blank" rel="noopener noreferrer">solucionesmb.cl</a>, y <a href="https://sistema.escuelahuachipatochillan.cl/" target="_blank" rel="noopener noreferrer">software de gestión Escuela Huachipato</a>.</p>
+                                <small class="text-muted">Trabajos freelance</small>
+                            </li>
+                            <li class="list-group-item px-0">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Ventas y Departamento de Tecnología</h5>
+                                    <small class="text-muted">2023 - 2025</small>
+                                </div>
+                                <p class="mb-1">Empresa SOLUCIONESMB Ingeniería</p>
+                            </li>
+                            <li class="list-group-item px-0">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Seo FunnelATF</h5>
+                                    <small class="text-muted">2022 - 2023</small>
+                                </div>
+                                <p class="mb-1">Empresa de Marketing y diseño web</p>
+                            </li>
+                            <li class="list-group-item px-0">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Soporte TI</h5>
+                                    <small class="text-muted">2021 - 2022</small>
+                                </div>
+                                <p class="mb-1">Empresa Timagnus</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Columna Derecha (secundaria) -->
+            <div class="col-lg-4">
+                
+                <!-- Sección DATOS PERSONALES -->
+                <div class="card sticky-lg-top" style="top: 80px;"> <!-- Hacemos que esta tarjeta sea "pegajosa" en pantallas grandes -->
+                    <div class="card-header bg-dark text-white py-3">
+                        <h3 class="h5 mb-0"><i class="bi bi-person-vcard-fill me-2"></i>Datos Personales</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Usamos una tabla con estilo de Bootstrap -->
+                        <div class="table-responsive">
+                            <table class="table table-borderless table-hover align-middle">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" style="width: 30%;"><i class="bi bi-person-fill me-2 text-secondary"></i>Nombre</th> <!-- Cambiado de text-primary -->
+                                        <td>Sebastian Fuster Soto</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="bi bi-calendar-event-fill me-2 text-secondary"></i>Edad</th> <!-- Cambiado de text-primary -->
+                                        <td>39</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="bi bi-telephone-fill me-2 text-secondary"></i>Teléfono</th> <!-- Cambiado de text-primary -->
+                                        <td>+56966274175</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><i class="bi bi-envelope-fill me-2 text-secondary"></i>Email</th> <!-- Cambiado de text-primary -->
+                                        <td>fuster.sebastian@gmail.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="text-center mt-5 py-4 bg-dark text-white-50">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Sebastian Fuster Soto. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap (Bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

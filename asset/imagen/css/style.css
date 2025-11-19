@@ -1,0 +1,118 @@
+/* Usamos una fuente más moderna de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+/* Importamos una fuente monoespaciada para el fondo de código */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Quitamos el color de fondo de aquí */
+    color: #f8f9fa; /* Texto claro por defecto */
+    position: relative; /* Necesario para el pseudo-elemento */
+}
+
+/* Damos espacio al contenido para que no lo tape la barra fija */
+body {
+    padding-top: 70px;
+}
+
+/* Pseudo-elemento para el fondo de código sutil */
+body::before {
+    /* Repetimos fragmentos de código */
+    content: "import React, { useState } from 'react';\A\Afunction Counter() {\A  const [count, setCount] = useState(0);\A  return (\A    <div>\A      <p>You clicked {count} times</p>\A      <button onClick={() => setCount(count + 1)}>\A        Click me\A      </button>\A    </div>\A  );\A}\A\Adef get_user(user_id):\A    user = db.query(User).filter(User.id == user_id).first()\A    if not user:\A        raise HTTPException(status_code=404, detail=\"User not found\")\A    return user\A\A@app.get(\"/users/{user_id}\")\Aasync def read_user(user_id: int):\A    return get_user(user_id)\A\A"
+             "import React, { useState } from 'react';\A\Afunction Counter() {\A  const [count, setCount] = useState(0);\A  return (\A    <div>\A      <p>You clicked {count} times</p>\A      <button onClick={() => setCount(count + 1)}>\A        Click me\A      </button>\A    </div>\A  );\A}\A\Adef get_user(user_id):\A    user = db.query(User).filter(User.id == user_id).first()\A    if not user:\A        raise HTTPException(status_code=404, detail=\"User not found\")\A    return user\A\A@app.get(\"/users/{user_id}\")\Aasync def read_user(user_id: int):\A    return get_user(user_id)\A\A"
+             "import React, { useState } from 'react';\A\Afunction Counter() {\A  const [count, setCount] = useState(0);\A  return (\A    <div>\A      <p>You clicked {count} times</p>\A      <button onClick={() => setCount(count + 1)}>\A        Click me\A      </button>\A    </div>\A  );\A}\A\Adef get_user(user_id):\A    user = db.query(User).filter(User.id == user_id).first()\A    if not user:\A        raise HTTPException(status_code=404, detail=\"User not found\")\A    return user\A\A@app.get(\"/users/{user_id}\")\Aasync def read_user(user_id: int):\A    return get_user(user_id)";
+    
+    background-color: #212529; /* ¡Añadimos el fondo oscuro aquí! */
+    font-family: 'Fira Code', monospace; /* Fuente de código */
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.04); /* Color de texto muy sutil */
+    position: fixed; /* Fijo en la pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Detrás de todo el contenido */
+    overflow: hidden; /* Evita barras de scroll */
+    white-space: pre; /* Respeta los saltos de línea */
+    line-height: 1.5;
+    user-select: none; /* No se puede seleccionar */
+    pointer-events: none; /* No interfiere con clics */
+}
+
+
+/* Hacemos la foto de perfil circular y con un borde sutil */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #343a40; /* Borde más oscuro para el tema oscuro */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card {
+    /* Todas las tarjetas tendrán esquinas redondeadas y una sombra suave */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: none;
+    background-color: #343a40; /* Fondo de tarjeta oscuro */
+    color: #f8f9fa; /* Texto de tarjeta claro */
+}
+
+/* Estilo para la sección de "bienvenida" o cabecera */
+.header-section {
+    background: #343a40; /* Fondo oscuro, igual que las tarjetas */
+    color: white;
+    border-radius: 15px;
+}
+
+/* Ajustes para elementos dentro de las tarjetas */
+.list-group-item {
+    background-color: transparent; /* Fondo transparente para heredar el de la tarjeta */
+    border-color: rgba(255, 255, 255, 0.125); /* Borde sutil */
+    color: #f8f9fa; /* Texto claro */
+}
+
+.card-title, .card-text, .lead {
+    color: #f8f9fa; /* Texto claro general */
+}
+
+/* Clases de utilidad de Bootstrap para texto */
+.text-muted {
+    color: #adb5bd !important; /* Texto "muted" más claro */
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Ajustes para la tabla de datos personales */
+.table {
+    color: #f8f9fa; /* Texto de la tabla claro */
+}
+
+.table-hover > tbody > tr:hover > * {
+  color: #f8f9fa; /* Mantener texto claro en hover */
+  background-color: rgba(255, 255, 255, 0.075); /* Resaltado sutil */
+}
+
+/* Botones de portafolio */
+.btn-outline-secondary {
+    color: #adb5bd; /* Color de texto gris */
+    border-color: #adb5bd; /* Borde gris */
+}
+
+.btn-outline-secondary:hover {
+    color: #212529; /* Texto oscuro al pasar el mouse */
+    background-color: #adb5bd; /* Fondo gris */
+    border-color: #adb5bd;
+}
+
+/* Enlaces de experiencia (más visibles en fondo oscuro) */
+#experiencia a {
+    color: #90c0ff; /* Un azul claro que resalta */
+}
+
+#experiencia a:hover {
+    color: #b3d1ff;
+    text-decoration: underline;
+}
